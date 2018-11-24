@@ -1,6 +1,7 @@
 body{
     margin: 0;
 }
+/*Start Background changes*/
 .background-top{
     position: relative;
     background-image: url("../img/background-top.jpg");
@@ -30,47 +31,147 @@ body{
 }
 .content-site{
     position: absolute;
-    width: 970px;
+    width: 85%;
     height: 1800px;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -1%);
     z-index: 9;
-    background-color: #fff;
-    -webkit-box-shadow: -2px -2px 48px 7px rgba(0,0,0,0.75);
-    -moz-box-shadow: -2px -2px 48px 7px rgba(0,0,0,0.75);
-    box-shadow: -2px -2px 48px 7px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 0px -13px 33px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px -13px 33px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px -13px 33px 0px rgba(0,0,0,0.75);
 }
 .cont-midBox-top{
-    width: 970px;
-    height: 600px;
-    background-color: red;
+    width: 100%;
+    height: 605px;
+    opacity: 0.4;
 }
 .cont-midBox-middle{
-    width: 970px;
+    width: 100%;
     height: 600px;
     background-color: #2b2a30;
 }
 .cont-midBox-bottom .circle-middle{
     position: absolute;
     z-index: 999;
-    height: 150px;
     width: 150px;
+    height: 150px;
     background-color: #c1c1c1;
     border-radius: 50%;
     top: 62%;
     left: 42%;
 }
+.cont-midBox-bottom{
+    width: 100%;
+    height: 600px;
+    background-color: #c1c1c1;
+}
 .cont-midBox-bottom .half-circle{
     position: absolute;
     z-index: 999;
-    height:95px;
     width: 150px;
+    height:95px;
     border-radius: 90px 90px 0 0;
-    background-image: url("../img/halfcircle_background.png");
+    background-image: url("../img/halfcircle-background.png");
+    top: 95%;
+    left: 42%;
 }
-.cont-midBox-bottom{
-    width: 970px;
-    height: 600px;
-    background-color: #c1c1c1;
+/*End Background changes*/
+
+/*Start Navigation*/
+.navigation{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.navIcon{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    margin-right: 85px;
+}
+.navIcon li {
+    padding: 10px 20px 10px 20px;
+}
+.navIcon li a {
+    color: #fff;
+    font-size: 25px;
+}
+.navbar {
+    margin-left: 30px;
+    font-size: 18px;
+    padding-bottom: 10px;
+}
+
+.main-nav {
+    list-style-type: none;
+    display: none;
+    padding-left: 0px;
+}
+
+.nav-links{
+    text-decoration: none;
+    color: #fff;
+}
+.navbar-toggle {
+    position: absolute;
+    top: 2%;
+    right: 8%;
+    cursor: pointer;
+    color: #fff;
+    font-size: 36px;
+}
+.active {
+    display: block;
+}
+
+@media screen and (min-width: 992px) {
+
+    .main-nav {
+        display: flex;
+        flex-direction: row;
+        margin-left: 40px;
+    }
+
+    .nav-links {
+        margin-left: 40px;
+    }
+
+    .navbar-toggle {
+        display: none;
+    }
+
+}
+
+@media screen and (max-width: 992px){
+
+    .navigation{
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+    }
+    .navbar-toggle {
+        position: absolute;
+        top: 2%;
+        left: 8%;
+        cursor: pointer;
+        color: #fff;
+        font-size: 36px;
+    }
+
+    .navbar {
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%, 0%);
+        margin-left: 0px;
+    }
+
+    .main-nav li {
+        text-align: center;
+        margin: 25px auto;
+    }
+    .navIcon{
+        flex-direction: column;
+        margin-right: 50px;
+    }
 }

@@ -4,11 +4,46 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Title</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Bree+Serif" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-<div class="background-top"></div>
+<div class="background-top">
+        <div class="navigation">
+    <span class="navbar-toggle" id="js-navbar-toggle">
+            <i class="fas fa-bars"></i>
+        </span>
+            <nav class="navbar">
+                <ul class="main-nav" id="js-menu">
+                    <li>
+                        <a href="#" class="nav-links">Home</a>
+                    </li>
+                    <li>
+                        <a href="#" class="nav-links">Products</a>
+                    </li>
+                    <li>
+                        <a href="#" class="nav-links">About Us</a>
+                    </li>
+                    <li>
+                        <a href="#" class="nav-links">Contact Us</a>
+                    </li>
+                    <li>
+                        <a href="#" class="nav-links">Blog</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <ul class="navIcon">
+                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fab fa-500px"></i></a></li>
+            </ul>
+    </div>
+    </header>
+</div>
 <div class="background-center">fdffd</div>
 <div class="background-bottom">fdff</div>
 <div class="content-site">
@@ -23,6 +58,14 @@
 </div>
 
 
+<script>
+    var mainNav = document.getElementById("js-menu");
+    var navBarToggle = document.getElementById("js-navbar-toggle");
 
+    navBarToggle.addEventListener("click", function() {
+        mainNav.classList.toggle("active");
+    });
+
+</script>
 </body>
 </html>
