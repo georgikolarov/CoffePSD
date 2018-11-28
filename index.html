@@ -12,25 +12,24 @@
 
 <div class="background-top">
         <div class="navigation">
-    <span class="navbar-toggle" id="js-navbar-toggle">
-            <i class="fas fa-bars"></i>
-        </span>
+            <div id="nav-icon1" class="navbar-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
             <nav class="navbar">
                 <ul class="main-nav" id="js-menu">
-                    <li>
+                    <li class="activeNav">
                         <a href="#" class="nav-links">Home</a>
-                    </li>
-                    <li>
-                        <a href="#" class="nav-links">Products</a>
                     </li>
                     <li>
                         <a href="#" class="nav-links">About Us</a>
                     </li>
                     <li>
-                        <a href="#" class="nav-links">Contact Us</a>
+                        <a href="#" class="nav-links">Works</a>
                     </li>
                     <li>
-                        <a href="#" class="nav-links">Blog</a>
+                        <a href="#" class="nav-links">Contact Us</a>
                     </li>
                 </ul>
             </nav>
@@ -44,10 +43,15 @@
     </div>
     </header>
 </div>
-<div class="background-center">fdffd</div>
-<div class="background-bottom">fdff</div>
+<div class="background-center"></div>
+<div class="background-bottom"></div>
 <div class="content-site">
     <div class="cont-midBox-top">
+        <section class="feature1">
+            <h1 class="title">WHAT’S NCF?</h1>
+            <p>Bacon ipsum dolor amet tail turkey pastrami turducken beef, pancetta pork salami cupim frankfurter flank. Biltong alcatra pork belly ground round, filet mignon leberkas strip steak short ribs brisket burgdoggen porchetta swine. Pork loin shankle landjaeger meatloaf, ribeye kevin leberkas pork belly jowl swine tri-tip turducken. Pork loin drumstick shoulder, cupim ball tip pork belly pastrami flank chicken sausage strip steak ham pig pork chop pork.</p>
+            <a href="" title="Button push blue/green" class="button btnPush btnBlueGreen">More info</a>
+        </section>
     </div>
     <div class="cont-midBox-middle">
     </div>
@@ -57,10 +61,19 @@
     </div>
 </div>
 
-
+<script
+        src="https://code.jquery.com/jquery-3.3.1.js"
+        integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+        crossorigin="anonymous"></script>
 <script>
+    $(document).ready(function(){
+        $('#nav-icon1').click(function(){
+            $(this).toggleClass('open');
+        });
+    });
+
     var mainNav = document.getElementById("js-menu");
-    var navBarToggle = document.getElementById("js-navbar-toggle");
+    var navBarToggle = document.getElementById("nav-icon1");
 
     navBarToggle.addEventListener("click", function() {
         mainNav.classList.toggle("active");
