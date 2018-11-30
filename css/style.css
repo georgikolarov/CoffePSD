@@ -33,9 +33,8 @@ body{
 .content-site{
     position: absolute;
     width: 85%;
-    height: 1800px;
     left: 50%;
-    top: 32%;
+    top: 274px;
     transform: translate(-50%, -1%);
     z-index: 9;
     -webkit-box-shadow: 0px -13px 33px 0px rgba(0,0,0,0.75);
@@ -51,18 +50,17 @@ body{
     flex-direction: row;
     align-items: center;
     width: 100%;
-    height: 650px;
     background-color: #2b2a30;
 }
-.cont-midBox-middle:after{
+.cont-midBox-bottom:before{
     content: '';
     position: absolute;
     z-index: 999;
+    height:  71px;
     width: 150px;
-    height: 150px;
+    border-radius: 90px 90px 0 0;
     background-color: #c1c1c1;
-    border-radius: 50%;
-    top: 68%;
+    top: 66%;
     left: 50%;
     transform: translate(-50%,0);
 }
@@ -73,22 +71,6 @@ body{
     background-color: #c1c1c1;
 }
 
-.cont-midBox-bottom:after{
-    content: '';
-    position: absolute;
-    z-index: 999;
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    background: #c1c1c1;
-    background: transparent;
-    top: 101%;
-    left: 50%;
-    transform: translate(-50%,0);
-    -webkit-box-shadow: 0px -13px 33px 0px rgba(0,0,0,0.75);
-    -moz-box-shadow: 0px -13px 33px 0px rgba(0,0,0,0.75);
-    box-shadow: 0px -13px 33px 0px rgba(0,0,0,0.75);
-}
 /*End Background changes*/
 
 /*Start Navigation*/
@@ -242,6 +224,48 @@ a.button {
 .btnBlueGreen.btnPush:hover {
     box-shadow: 0px 0px 0px 0px #ff8706;
 }
+.cont-midBox-bottom h2{
+    margin-top: 0px;
+    padding-top: 10px;
+    text-align: center;
+    text-transform: uppercase;
+}
+.listWorks{
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    padding-left: 0px;
+}
+.listWorks li{
+    border: 1px solid #000;
+    border-radius: 5px;
+    padding: 15px 20px 15px 20px;
+    margin: 0px 20px 0px 20px;
+}
+.listWorks li a {
+    color: #000;
+    text-transform: uppercase;
+}
+.listWorks li a:hover {
+    color: #ff8706;
+    text-transform: uppercase;
+}
+
+.imageBox{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 0 100px;
+}
+.imageBox div{
+    width: 50%;
+}
+.imageBox img{
+    width: 100%;
+}
 
 
 @media screen and (min-width: 992px) {
@@ -293,7 +317,7 @@ a.button {
     }
     .feature2 p{
         font-size: 22px;
-        text-align: center;
+        text-align: left;
         padding: 0px 40px 0px 40px;
     }
     .teamBox{
@@ -315,6 +339,14 @@ a.button {
     .teamBox .box img{
         width: 95%;
     }
+    .cont-midBox-bottom h2{
+        margin-bottom: 50px;
+    }
+    .listWorks{
+        margin-bottom: 40px;
+    }
+
+
 
 }
 
@@ -407,5 +439,7 @@ a.button {
         width: 70%;
         margin: 0 auto;
     }
+
+
 
 }
