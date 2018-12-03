@@ -10,7 +10,7 @@
 </head>
 <body>
 
-<div class="background-top">
+<section id="headerBackground">
         <div class="navigation">
             <div id="nav-icon1" class="navbar-toggle">
                 <span></span>
@@ -42,42 +42,45 @@
             </ul>
     </div>
     </header>
-</div>
-<div class="background-center"></div>
-<div class="background-bottom"></div>
-<div class="content-site">
-    <div class="cont-midBox-top">
-        <section class="feature1">
+</section>
+<section id="contentBackground"></section>
+<section id="footerBackground">
+</section>
+<div id="content-site">
+    <section class="cont-midBox-top">
+        <div class="feature1">
             <h1 class="title">WHAT’S NCF?</h1>
             <p>Bacon ipsum dolor amet tail turkey pastrami turducken beef, pancetta pork salami cupim frankfurter flank. Biltong alcatra pork belly ground round, filet mignon leberkas strip steak short ribs brisket burgdoggen porchetta swine. Pork loin shankle landjaeger meatloaf, ribeye kevin leberkas pork belly jowl swine tri-tip turducken. Pork loin drumstick shoulder, cupim ball tip pork belly pastrami flank chicken sausage strip steak ham pig pork chop pork.</p>
             <a href="" title="Button push blue/green" class="button btnPush btnBlueGreen">More info</a>
-        </section>
-    </div>
-    <div class="cont-midBox-middle">
-        <section class="feature2">
-            <h1 class="title">Elegant</h1>
-            <p>Bacon ipsum dolor amet tail turkey pastrami turducken beef, pancetta pork salami cupim frankfurter flank. Biltong alcatra pork belly ground round, filet mignon leberkas strip steak short ribs brisket burgdoggen porchetta swine. Pork loin shankle landjaeger meatloaf, ribeye kevin leberkas pork belly jowl swine tri-tip turducken. Pork loin drumstick shoulder, cupim ball tip pork belly pastrami flank chicken sausage strip steak ham pig pork chop pork.</p>
-            <a href="" title="Button push blue/green" class="button btnPush btnBlueGreen">More info</a>
-        </section>
-        <section class="teamBox">
-            <div class="box">
-                <img src="img/team.png" alt="">
-                <h4>SEO</h4>
-                <h3>John Doe</h3>
-            </div>
-            <div class="box">
-                <img src="img/team.png" alt="">
-                <h4>Web designer</h4>
-                <h3>John Doe</h3>
-            </div>
-            <div class="box">
-                <img src="img/team.png" alt="">
-                <h4>Graphic designer</h4>
-                <h3>John Doe</h3>
-            </div>
-        </section>
-    </div>
-    <div class="cont-midBox-bottom">
+        </div>
+    </section>
+      <section class="cont-midBox-middle">
+         <div class="content">
+             <div class="feature2">
+                 <h1 class="title">Elegant</h1>
+                 <p>Bacon ipsum dolor amet tail turkey pastrami turducken beef, pancetta pork salami cupim frankfurter flank. Biltong alcatra pork belly ground round, filet mignon leberkas strip steak short ribs brisket burgdoggen porchetta swine. Pork loin shankle landjaeger meatloaf, ribeye kevin leberkas pork belly jowl swine tri-tip turducken. Pork loin drumstick shoulder, cupim ball tip pork belly pastrami flank chicken sausage strip steak ham pig pork chop pork.</p>
+                 <a href="" title="Button push blue/green" class="button btnPush btnBlueGreen">More info</a>
+             </div>
+             <div class="teamBox">
+                 <div class="box">
+                     <img src="img/team.png" alt="">
+                     <h4>SEO</h4>
+                     <h3>John Doe</h3>
+                 </div>
+                 <div class="box">
+                     <img src="img/team.png" alt="">
+                     <h4>Web designer</h4>
+                     <h3>John Doe</h3>
+                 </div>
+                 <div class="box">
+                     <img src="img/team.png" alt="">
+                     <h4>Graphic designer</h4>
+                     <h3>John Doe</h3>
+                 </div>
+             </div>
+         </div>
+      </section>
+    <section class="cont-midBox-bottom">
         <h2 class="title">Works</h2>
         <ul class="listWorks">
             <li><a href="#">All</a></li>
@@ -90,6 +93,16 @@
             <div><img src="img/image2.jpg" alt=""></div>
             <div><img src="img/image3.jpg" alt=""></div>
             <div><img src="img/image4.jpg" alt=""></div>
+        </div>
+    </section>
+    <div class="content-footer">
+        <h2 class="title">Contact Us</h2>
+        <div class="contanctForm">
+            <div class="name">
+                <input type="text" id="fname" name="firstname" placeholder="NAME">
+                <input type="text" id="email" name="email" placeholder="EMAIL">
+            </div>
+            <textarea id="subject" name="subject" placeholder="MESSAGE"></textarea>
         </div>
     </div>
 </div>

@@ -3,7 +3,7 @@ body{
     font-family: 'Prompt', sans-serif;
 }
 /*Start Background changes*/
-.background-top{
+#headerBackground{
     position: relative;
     background-image: url("../img/background-top.jpg");
     background-repeat: no-repeat;
@@ -12,7 +12,7 @@ body{
     width: 100%;
     height: 900px;
 }
-.background-center {
+#contentBackground {
     position: relative;
     background-image: url("../img/background_01.png");
     background-size: cover;
@@ -21,16 +21,16 @@ body{
     width: 100%;
     height: 900px;
 }
-.background-bottom{
+#footerBackground{
     position: relative;
     background-image: url("../img/background-bottom_02.png");
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
     width: 100%;
-    height: 600px;
+    height: 1200px;
 }
-.content-site{
+#content-site{
     position: absolute;
     width: 85%;
     left: 50%;
@@ -43,31 +43,35 @@ body{
 }
 .cont-midBox-top{
     width: 100%;
-    height: 644px;
+    padding: 322px 0px 322px 0px;
 }
 .cont-midBox-middle{
+    position: relative;
+    background-color: #2b2a30;
+}
+.cont-midBox-middle .content{
+    position: relative;
     display: flex;
     flex-direction: row;
     align-items: center;
-    width: 100%;
-    background-color: #2b2a30;
+    padding: 50px 0px 100px 0px;
 }
-.cont-midBox-bottom:before{
+.content:after{
     content: '';
     position: absolute;
     z-index: 999;
-    height:  71px;
+    height:  75px;
     width: 150px;
     border-radius: 90px 90px 0 0;
     background-color: #c1c1c1;
-    top: 66%;
     left: 50%;
+    bottom: -1%;
     transform: translate(-50%,0);
 }
 
 .cont-midBox-bottom{
     width: 100%;
-    height: 600px;
+    padding: 50px 0px 50px 0px;
     background-color: #c1c1c1;
 }
 
@@ -226,7 +230,6 @@ a.button {
 }
 .cont-midBox-bottom h2{
     margin-top: 0px;
-    padding-top: 10px;
     text-align: center;
     text-transform: uppercase;
 }
@@ -264,11 +267,64 @@ a.button {
     width: 50%;
 }
 .imageBox img{
-    width: 100%;
+    width: 101%;
+    height: 100%;
 }
-
-
-@media screen and (min-width: 992px) {
+.content-footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    bottom: -20%;
+    left: 50%;
+    transform: translate(-50%,0);
+    margin: 0 auto;
+}
+.content-footer .title{
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 25px;
+    letter-spacing: 10px;
+}
+.contanctForm{
+    display: flex;
+    flex-direction: row;
+}
+.name{
+    display: flex;
+    flex-direction: column;
+    margin-right: 10px;
+}
+.name input{
+    width: 450px;
+    background-color: #443c44;
+    color: #fff;
+    border: 1px solid #443c44;
+    border-radius: 4px;
+    padding: 30px 10px 30px 10px;
+    outline: none;
+}
+.name input:first-child{
+    margin-bottom: 10px;
+}
+textarea{
+    resize: none;
+    width: 450px;
+    height: 100%;
+    background-color: #443c44;
+    color: #fff;
+    font-size: 15px;
+    border: 1px solid #443c44;
+    border-radius: 4px;
+    outline: none;
+    padding: 10px 0px 112px 10px;
+}
+::-webkit-input-placeholder{
+    color: #fff;
+    font-size: 15px;
+    text-transform: uppercase;
+}
+@media (min-width: 992px) {
 
     .main-nav {
         display: flex;
@@ -350,7 +406,7 @@ a.button {
 
 }
 
-@media screen and (max-width: 992px){
+@media (max-width: 992px){
 
     .navigation{
         display: flex;
@@ -388,7 +444,7 @@ a.button {
     .nav-links:hover{
         color: #ff8706;
     }
-    .cont-midBox-middle{
+    .cont-midBox-middle .content{
         flex-direction: column;
     }
     .feature1{
@@ -439,7 +495,29 @@ a.button {
         width: 70%;
         margin: 0 auto;
     }
+    .imageBox{
+        flex-direction: column;
+        align-items: center;
+    }
+    .imageBox div{
+        width: 100%;
+    }
+    .listWorks{
+        text-align: center;
+        flex-direction: column;
+    }
+    .listWorks li{
+        margin: 5px 50px 5px 50px;
+    }
+    .contanctForm{
+        display: flex;
+        flex-direction: column;
+    }
 
 
-
+}
+@media (max-width: 575.98px){
+    .imageBox div{
+        width: 130%;
+    }
 }
