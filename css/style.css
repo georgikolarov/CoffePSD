@@ -1,9 +1,11 @@
-body{
+body {
     margin: 0;
     font-family: 'Prompt', sans-serif;
 }
+
 /*Start Background changes*/
-#headerBackground{
+
+#headerBackground {
     position: relative;
     background-image: url("../img/background-top.jpg");
     background-repeat: no-repeat;
@@ -12,6 +14,7 @@ body{
     width: 100%;
     height: 900px;
 }
+
 #contentBackground {
     position: relative;
     background-image: url("../img/background_01.png");
@@ -21,7 +24,8 @@ body{
     width: 100%;
     height: 900px;
 }
-#footerBackground{
+
+#footerBackground {
     position: relative;
     background-image: url("../img/background-bottom_02.png");
     background-size: cover;
@@ -30,46 +34,51 @@ body{
     width: 100%;
     height: 1200px;
 }
-#content-site{
+
+#content-site {
     position: absolute;
     width: 85%;
     left: 50%;
     top: 274px;
     transform: translate(-50%, -1%);
     z-index: 9;
-    -webkit-box-shadow: 0px -13px 33px 0px rgba(0,0,0,0.75);
-    -moz-box-shadow: 0px -13px 33px 0px rgba(0,0,0,0.75);
-    box-shadow: 0px -13px 33px 0px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 0px -13px 33px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px -13px 33px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px -13px 33px 0px rgba(0, 0, 0, 0.75);
 }
-.cont-midBox-top{
+
+.cont-midBox-top {
     width: 100%;
     padding: 322px 0px 322px 0px;
 }
-.cont-midBox-middle{
+
+.cont-midBox-middle {
     position: relative;
     background-color: #2b2a30;
 }
-.cont-midBox-middle .content{
+
+.cont-midBox-middle .content {
     position: relative;
     display: flex;
     flex-direction: row;
     align-items: center;
     padding: 50px 0px 100px 0px;
 }
-.content:after{
+
+.content:after {
     content: '';
     position: absolute;
     z-index: 999;
-    height:  75px;
+    height: 75px;
     width: 150px;
     border-radius: 90px 90px 0 0;
     background-color: #c1c1c1;
     left: 50%;
     bottom: -1%;
-    transform: translate(-50%,0);
+    transform: translate(-50%, 0);
 }
 
-.cont-midBox-bottom{
+.cont-midBox-bottom {
     width: 100%;
     padding: 50px 0px 50px 0px;
     background-color: #c1c1c1;
@@ -78,28 +87,34 @@ body{
 /*End Background changes*/
 
 /*Start Navigation*/
-.navigation{
+
+.navigation {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
-.navIcon{
+
+.navIcon {
     display: flex;
     flex-direction: row;
     list-style: none;
     margin-right: 120px;
 }
+
 .navIcon li {
     padding: 10px 20px 10px 20px;
     cursor: pointer;
 }
+
 .navIcon li a {
     color: #fff;
     font-size: 25px;
 }
-.navIcon li a:hover{
+
+.navIcon li a:hover {
     color: #ff8706;
 }
+
 .navbar {
     margin-left: 90px;
     font-size: 18px;
@@ -113,7 +128,8 @@ body{
     margin: 0px;
     text-transform: uppercase;
 }
-.nav-links{
+
+.nav-links {
     text-decoration: none;
     color: #fff;
 }
@@ -121,14 +137,16 @@ body{
 .active {
     display: block;
 }
+
 /*Start Hamburger menu animation*/
-#nav-icon1{
+
+#nav-icon1 {
     width: 60px;
     height: 45px;
     position: absolute;
     top: 3%;
     right: 20%;
-    transform: translate(-3%,-20%);
+    transform: translate(-3%, -20%);
     -webkit-transform: rotate(0deg);
     -moz-transform: rotate(0deg);
     -o-transform: rotate(0deg);
@@ -140,7 +158,7 @@ body{
     cursor: pointer;
 }
 
-#nav-icon1 span{
+#nav-icon1 span {
     display: block;
     position: absolute;
     height: 7px;
@@ -193,11 +211,14 @@ body{
 }
 
 /*End Hamburger menu animation*/
+
 /*Start Content feature1*/
+
 a,
 a:visited {
     text-decoration: none;
 }
+
 a.button {
     margin: 10px auto;
     width: 120px;
@@ -214,12 +235,15 @@ a.button {
 .btnBlueGreen {
     background: #ff8706;
 }
+
 .btnFade.btnBlueGreen:hover {
     background: #ffa40e;
 }
+
 .btnBlueGreen.btnPush {
     box-shadow: 0px 5px 0px 0px #ffa40e;
 }
+
 .btnPush:hover {
     margin-top: 15px;
     margin-bottom: 5px;
@@ -228,12 +252,14 @@ a.button {
 .btnBlueGreen.btnPush:hover {
     box-shadow: 0px 0px 0px 0px #ff8706;
 }
-.cont-midBox-bottom h2{
+
+.cont-midBox-bottom h2 {
     margin-top: 0px;
     text-align: center;
     text-transform: uppercase;
 }
-.listWorks{
+
+.listWorks {
     list-style: none;
     display: flex;
     flex-wrap: wrap;
@@ -241,61 +267,71 @@ a.button {
     justify-content: center;
     padding-left: 0px;
 }
-.listWorks li{
+
+.listWorks li {
     border: 1px solid #000;
     border-radius: 5px;
     padding: 15px 20px 15px 20px;
     margin: 0px 20px 0px 20px;
 }
+
 .listWorks li a {
     color: #000;
     text-transform: uppercase;
 }
+
 .listWorks li a:hover {
     color: #ff8706;
     text-transform: uppercase;
 }
 
-.imageBox{
+.imageBox {
     display: flex;
     flex-direction: row;
     justify-content: center;
     flex-wrap: wrap;
     padding: 0 100px;
 }
-.imageBox div{
+
+.imageBox div {
     width: 50%;
 }
-.imageBox img{
+
+.imageBox img {
     width: 101%;
     height: 100%;
 }
-.content-footer{
+
+.content-footer {
     display: flex;
     flex-direction: column;
     align-items: center;
     position: absolute;
     bottom: -20%;
     left: 50%;
-    transform: translate(-50%,0);
+    transform: translate(-50%, 0);
     margin: 0 auto;
 }
-.content-footer .title{
+
+.content-footer .title {
     color: #fff;
     text-transform: uppercase;
     font-size: 25px;
     letter-spacing: 10px;
 }
-.contanctForm{
+
+.contanctForm {
     display: flex;
     flex-direction: row;
 }
-.name{
+
+.name {
     display: flex;
     flex-direction: column;
     margin-right: 10px;
 }
-.name input{
+
+.name input {
     width: 450px;
     background-color: #443c44;
     color: #fff;
@@ -304,10 +340,12 @@ a.button {
     padding: 30px 10px 30px 10px;
     outline: none;
 }
-.name input:first-child{
+
+.name input:first-child {
     margin-bottom: 10px;
 }
-textarea{
+
+textarea {
     resize: none;
     width: 450px;
     height: 100%;
@@ -319,29 +357,29 @@ textarea{
     outline: none;
     padding: 10px 0px 112px 10px;
 }
-::-webkit-input-placeholder{
+
+::-webkit-input-placeholder {
     color: #fff;
     font-size: 15px;
     text-transform: uppercase;
 }
-@media (min-width: 992px) {
 
+@media (min-width: 992px) {
     .main-nav {
         display: flex;
         flex-direction: row;
         margin-left: 40px;
     }
-
     .navbar-toggle {
         display: none;
     }
-    .main-nav li{
+    .main-nav li {
         padding: 30px 20px 30px 20px;
     }
-    .main-nav .activeNav{
+    .main-nav .activeNav {
         background-color: #ff8706;
     }
-    .main-nav li:hover{
+    .main-nav li:hover {
         background-color: #ff8706;
     }
     .feature1 {
@@ -362,21 +400,21 @@ textarea{
         text-align: center;
         color: #fff;
     }
-    .feature1.title .feature2.title{
+    .feature1.title .feature2.title {
         font-size: 70px;
         margin: 0;
     }
-    .feature1 p{
+    .feature1 p {
         font-size: 22px;
         text-align: left;
         padding: 0px 20px 0px 20px;
     }
-    .feature2 p{
+    .feature2 p {
         font-size: 22px;
         text-align: left;
         padding: 0px 40px 0px 40px;
     }
-    .teamBox{
+    .teamBox {
         width: 50%;
         display: flex;
         flex-direction: row;
@@ -384,31 +422,27 @@ textarea{
         color: #fff;
         padding: 0px 10px 0px 10px;
     }
-    .teamBox .box{
+    .teamBox .box {
         display: flex;
         flex-direction: column;
         text-align: center;
     }
-    .teamBox .box h3{
+    .teamBox .box h3 {
         margin: 0;
     }
-    .teamBox .box img{
+    .teamBox .box img {
         width: 95%;
     }
-    .cont-midBox-bottom h2{
+    .cont-midBox-bottom h2 {
         margin-bottom: 50px;
     }
-    .listWorks{
+    .listWorks {
         margin-bottom: 40px;
     }
-
-
-
 }
 
-@media (max-width: 992px){
-
-    .navigation{
+@media (max-width: 992px) {
+    .navigation {
         display: flex;
         flex-direction: row-reverse;
         justify-content: space-between;
@@ -421,33 +455,31 @@ textarea{
         color: #fff;
         font-size: 36px;
     }
-
     .navbar {
         position: absolute;
         left: 50%;
         transform: translate(-50%, 0%);
         margin-left: 0px;
     }
-
     .main-nav li {
         text-align: center;
         margin: 25px auto;
     }
-    .navIcon{
+    .navIcon {
         margin-right: 50px;
         flex-direction: column;
     }
-    .nav-links{
+    .nav-links {
         text-decoration: none;
         color: #fff;
     }
-    .nav-links:hover{
+    .nav-links:hover {
         color: #ff8706;
     }
-    .cont-midBox-middle .content{
+    .cont-midBox-middle .content {
         flex-direction: column;
     }
-    .feature1{
+    .feature1 {
         position: absolute;
         display: flex;
         flex-direction: column;
@@ -458,15 +490,16 @@ textarea{
         left: 50%;
         transform: translate(-50%, -1%);
     }
-    .feature1 .title, .feature2 .title {
+    .feature1 .title,
+    .feature2 .title {
         font-size: 35px;
         margin: 10px 0px 0px 0px;
     }
-    .feature1 p, .feature2 p{
+    .feature1 p,
+    .feature2 p {
         font-size: 16px;
         margin: 0px;
         padding: 10px 40px 10px 40px;
-
     }
     .feature2 {
         display: flex;
@@ -474,50 +507,59 @@ textarea{
         text-align: center;
         width: 100%;
         color: #fff;
-
     }
-    .teamBox{
+    .teamBox {
         display: flex;
         flex-direction: row;
         margin: 0 auto;
         color: #fff;
         padding: 20px;
     }
-    .teamBox .box{
+    .teamBox .box {
         display: flex;
         flex-direction: column;
         text-align: center;
     }
-    .teamBox .box h3{
+    .teamBox .box h3 {
         margin: 0;
     }
-    .teamBox .box img{
+    .teamBox .box img {
         width: 70%;
         margin: 0 auto;
     }
-    .imageBox{
+    .imageBox {
         flex-direction: column;
         align-items: center;
     }
-    .imageBox div{
+    .imageBox div {
         width: 100%;
     }
-    .listWorks{
+    .listWorks {
         text-align: center;
         flex-direction: column;
     }
-    .listWorks li{
+    .listWorks li {
         margin: 5px 50px 5px 50px;
     }
-    .contanctForm{
+    .contanctForm {
         display: flex;
         flex-direction: column;
     }
-
-
 }
-@media (max-width: 575.98px){
-    .imageBox div{
+
+@media(max-width: 992px) {
+    .contanctForm>.name>input {
+        padding: 30px 0px 30px 10px;
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .imageBox div {
         width: 130%;
+    }
+    .contanctForm>.name>input {
+        padding: 30px 0px 30px 10px;
+        margin-bottom: 10px;
     }
 }
